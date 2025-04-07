@@ -32,14 +32,14 @@ const Formulario = (props) => {
                 <CampoTexto 
                     obrigatorio={true}
                     label="Nome"
-                    placeholder="Digite seu nome" 
+                    placeholder="Digite qual nome" 
                     valor={nome}
                     aoAlterado={valor => setNome(valor)}
                 />
                 <CampoTexto
                     obrigatorio={true}
                     label="Vertente"
-                    placeholder="Digite seu cargo" 
+                    placeholder="Digite qual vertente" 
                     valor={cargo}
                     aoAlterado={valor => setCargo(valor)}
                 />

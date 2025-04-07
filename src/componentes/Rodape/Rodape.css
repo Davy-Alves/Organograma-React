@@ -15,3 +15,30 @@
 .footer ul li:last-child {
     margin-right: 0;
 }
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+        gap: 16px;
+        justify-content: space-around;
+    }
+
+    .footer ul {
+        display: flex;
+        padding-left: 10%;
+        padding-right: 20px;
+    }
+
+    .footer a img {
+        max-width: 16px;
+        display: flex;
+    }
+
+    .cat {
+        max-width: 80px;
+    }
+
+    .footer p {
+        font-size: 0.7em;
+    }
+}

@@ -18,3 +18,9 @@
     font-family: 'Orbitron';
     font-size: 2em;
 }
+
+@media (max-width: 480px) {
+    .formulario form {
+        max-width: 60%;
+    }
+}
