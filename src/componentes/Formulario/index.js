@@ -7,7 +7,7 @@ import './Formulario.css'
 const Formulario = (props) => {
 
     const [nome, setNome] = useState('')
-    const [cargo, setCargo] = useState('')
+    const [vertente, setVertente] = useState('')
     const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
 
@@ -15,12 +15,12 @@ const Formulario = (props) => {
         evento.preventDefault()
         props.aoColaboradorCadastrado({
             nome,
-            cargo,
+            cargo: vertente,
             imagem,
             time
         })
         setNome('')
-        setCargo('')
+        setVertente('')
         setImagem('')
         setTime('')
     }
@@ -40,8 +40,8 @@ const Formulario = (props) => {
                     obrigatorio={true}
                     label="Vertente"
                     placeholder="Digite qual vertente" 
-                    valor={cargo}
-                    aoAlterado={valor => setCargo(valor)}
+                    valor={vertente}
+                    aoAlterado={valor => setVertente(valor)}
                 />
                 <CampoTexto
                     label="Imagem"
